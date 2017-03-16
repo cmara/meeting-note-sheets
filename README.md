@@ -24,3 +24,7 @@ make
 ```
 
 Of course, if you're comfortable with LaTeX, you know what to do.
+
+## Disclaimer
+
+These templates were created to aid in note taking during meetings, but do not in any way imply association with the [Central Massachusetts Amateur Radio Association](http://cmara.org/). The content, views, and opinions expressed in these documents are those of the authors and do not necessarily reflect the views or opinions of the [Central Massachusetts Amateur Radio Association](http://cmara.org/). You may freely use these documents under the [MIT License](LICENSE).
