@@ -1,0 +1,20 @@
+sudo: required
+dist: trusty
+
+install:
+  - sudo bash scripts/install.sh
+
+script:
+  - bash scripts/build.sh
+
+before_deploy:
+  - rm -f output/*.log output/*.aux
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_KEY_ID
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: us-west-2-com-cranstonide-share
+  skip_cleanup: true
+  local_dir: output
+  upload-dir: w1ide/cmara
