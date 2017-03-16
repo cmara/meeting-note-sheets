@@ -18,3 +18,4 @@ deploy:
   skip_cleanup: true
   local_dir: output
   upload-dir: w1ide/cmara
+  region: us-west-2
