@@ -1,0 +1,89 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{lastpage}
+\usepackage{pgffor}
+\usepackage{setspace}
+
+% Define the fancy headers and footers.
+\pagestyle{fancyplain}
+\lhead{}
+\chead{Central Massachusetts Amateur Radio Association}
+\rhead{}
+\lfoot{\texttt{https://github.com/mide/cmara-note-sheets}}
+\cfoot{}
+\rfoot{Page \thepage\ of \pageref{LastPage}}
+
+% Define Notes Lines
+\newcommand{\notelines }[3][\empty]{%
+    \noindent\vspace{10pt}\\
+    \foreach \n in {1,...,#2}{%
+        \ifthenelse{\equal{#1}{\empty}}
+            {\rule{#3}{0.5pt}\\}
+            {\rule{#3}{0.5pt}\vspace{#1}\\}
+        }
+}
+
+\begin{document}
+
+\begin{center}
+{\Large Central Massachusetts Amateur Radio Association}\\
+\emph{Board Meeting Note Sheet, Not official submission.}
+\end{center}
+
+\section{Meeting Called to Order}
+When was the meeting called to order (date \& time) and by whom?
+\notelines[12pt]{1}{\textwidth}
+
+\section{Attendance}
+
+\subsection{Officers Present}
+
+\begin{tabular}{|l|l|l|c|}
+  \hline
+  \textbf{Position} & \textbf{Name}  & \textbf{Callsign} & \textbf{Present} \\ \hline
+  President         & Bob Peloquin   & \texttt{KB1VUA}   &      \\ \hline
+  Vice President    & Brian Loverro  & \texttt{K1BML}    &      \\ \hline
+  Secretary         & Mark Ide       & \texttt{W1IDE}    &      \\ \hline
+  Treasurer         & Jim Singer     & \texttt{N1EKO}    &      \\ \hline
+  Webmaster         & Lyn Glagowski  & \texttt{WB1CCL}   &      \\ \hline
+\end{tabular}\\
+
+\noindent
+\emph{Is this list out of date? Visit the link in the lower left of this page and update.}
+
+\subsection{Board of Directors Present}
+
+\begin{tabular}{|l|l|c|}
+  \hline
+  \textbf{Name}     & \textbf{Callsign} & \textbf{Present} \\ \hline
+  Adrian Zeffert    & \texttt{AB2IX}    &  \\ \hline
+  Harold Carlson    & \texttt{N1ZC}     &  \\ \hline
+  Greg Algieri      & \texttt{WA1JXR}   &  \\ \hline
+  Terry Glagowski   & \texttt{W1TR}     &  \\ \hline
+  Randy Dore        & \texttt{W4FEB}    &  \\ \hline
+  Johnathan Sherman & \texttt{WW2JS}    &  \\
+  \hline
+\end{tabular}\\
+
+\noindent
+\emph{Is this list out of date? Visit the link in the lower left of this page and update.}
+
+\subsection{Members Present}
+\notelines[12pt]{2}{\textwidth}
+
+\subsection{Guests \& Visitors}
+\notelines[12pt]{2}{\textwidth}
+
+\section{Primary Discussions}
+\notelines[12pt]{14}{\textwidth}
+
+\subsection{Next Presentation}
+\notelines[12pt]{3}{\textwidth}
+
+\section{Meeting Adjourned}
+When was the meeting closed (date \& time) and by whom?
+\notelines[12pt]{1}{\textwidth}
+
+\end{document}

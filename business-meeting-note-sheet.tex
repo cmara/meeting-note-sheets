@@ -1,0 +1,97 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{lastpage}
+\usepackage{pgffor}
+\usepackage{setspace}
+
+% Define the fancy headers and footers.
+\pagestyle{fancyplain}
+\lhead{}
+\chead{Central Massachusetts Amateur Radio Association}
+\rhead{}
+\lfoot{\texttt{https://github.com/mide/cmara-note-sheets}}
+\cfoot{}
+\rfoot{Page \thepage\ of \pageref{LastPage}}
+
+% Define Notes Lines
+\newcommand{\notelines }[3][\empty]{%
+    \noindent\vspace{10pt}\\
+    \foreach \n in {1,...,#2}{%
+        \ifthenelse{\equal{#1}{\empty}}
+            {\rule{#3}{0.5pt}\\}
+            {\rule{#3}{0.5pt}\vspace{#1}\\}
+        }
+}
+
+\begin{document}
+
+\begin{center}
+{\Large Central Massachusetts Amateur Radio Association}\\
+\emph{Business Meeting Note Sheet, Not official submission.}
+\end{center}
+
+\section{Meeting Called to Order}
+When was the meeting called to order (date \& time) and by whom?
+\notelines[12pt]{1}{\textwidth}
+
+\section{Attendance}
+Put out attendance sheet and ask everyone to sign in.
+
+\section{Reports}
+
+\subsection{Secretary's Report}
+Was the secretary's report voted in? Under what conditions (as published, as read)? How was it approved (by verbal vote)?
+\notelines[12pt]{1}{\textwidth}
+
+\subsection{Treasurer's Report}
+Was the treasurer's report voted in? Under what conditions (as published, as read)? How was it approved (by verbal vote)?
+\notelines[12pt]{1}{\textwidth}
+
+\subsection{Committee Reports}
+
+\subsubsection{Membership Committee Report}
+\notelines[12pt]{5}{\textwidth}
+
+\subsubsection{Repeater Trustees Report}
+\notelines[12pt]{5}{\textwidth}
+
+\subsubsection{Field Day Committee Report}
+\notelines[12pt]{5}{\textwidth}
+
+\section{Old Business}
+\notelines[12pt]{5}{\textwidth}
+
+\newpage
+
+\section{New Business}
+
+\subsection{New CMARA Members}
+\notelines[12pt]{5}{\textwidth}
+
+\subsection{Other New Business}
+\notelines[12pt]{5}{\textwidth}
+
+\section{For the Good of the Club}
+
+\subsection{New Hams \& Upgrades}
+\notelines[12pt]{5}{\textwidth}
+
+\newpage
+
+\subsection{Other News}
+\notelines[12pt]{5}{\textwidth}
+
+\section{Next Meeting}
+\notelines[12pt]{3}{\textwidth}
+
+\section{Meeting Adjourned}
+When was the meeting closed (date \& time) and by whom?
+
+\notelines[12pt]{1}{\textwidth}
+
+\section{Post-Meeting Presentation}
+\notelines[12pt]{5}{\textwidth}
+
+\end{document}
