@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/mide/cmara-note-sheets.svg?branch=master)](https://travis-ci.org/mide/cmara-note-sheets) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mide/cmara-note-sheets/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/mide/cmara-note-sheets.svg)](https://github.com/mide/cmara-note-sheets/issues)
 
-These [LaTeX](https://en.wikipedia.org/wiki/LaTeX) documents are designed to aid in the taking of notes during meetings of the [Central Massachusetts Amateur Radio Association](http://cmara.org/).
+These [LaTeX](https://en.wikipedia.org/wiki/LaTeX) documents are designed to aid in the taking of notes during meetings of the [Central Massachusetts Amateur Radio Association](http://cmara.org/). See [the Disclaimer below](#disclaimer) for more information.
 
 ## Download PDF
 
