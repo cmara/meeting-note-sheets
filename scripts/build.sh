@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e # Exit on error
+
 mkdir -p output/
 
 # Board Meeting Notes
@@ -12,8 +14,10 @@ pdflatex -interaction=nonstopmode -halt-on-error -output-directory output docume
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory output documents/business-meeting-note-sheet.tex
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory output documents/business-meeting-note-sheet.tex
 
-# Attendance Sheet
+# Attendance Sheet (Make two sided for printing)
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory output documents/attendance-sheet.tex
+pdfunite output/attendance-sheet.pdf output/attendance-sheet.pdf output/attendance-sheet-two-sided.pdf
+mv output/attendance-sheet-two-sided.pdf output/attendance-sheet.pdf
 
 # Meeting Format Reminder Sheet
 # Takes two passes to get page number references correct.
