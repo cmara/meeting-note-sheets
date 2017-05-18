@@ -3,8 +3,8 @@
 apt-get -qq update
 
 apt-get install -y --no-install-recommends \
-  pdfunite \
   pgf \
+  poppler-utils \
   texlive-fonts-extra \
   texlive-fonts-recommended \
   texlive-latex-extra \
