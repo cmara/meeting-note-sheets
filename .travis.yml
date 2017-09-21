@@ -5,7 +5,7 @@ install:
   - sudo bash scripts/install.sh
 
 script:
-  - bash scripts/build.sh
+  - make all
 
 before_deploy:
   - rm -f output/*.log output/*.aux
