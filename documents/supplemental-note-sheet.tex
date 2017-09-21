@@ -1,0 +1,42 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{lastpage}
+\usepackage{pgffor}
+\usepackage{setspace}
+
+% Define the fancy headers and footers.
+\pagestyle{fancyplain}
+\lhead{}
+\chead{Central Massachusetts Amateur Radio Association}
+\rhead{}
+\lfoot{\texttt{https://github.com/mide/cmara-note-sheets}}
+\cfoot{}
+\rfoot{}
+
+% Define Notes Lines
+\newcommand{\notelines }[3][\empty]{%
+    \noindent\vspace{10pt}\\
+    \foreach \n in {1,...,#2}{%
+        \ifthenelse{\equal{#1}{\empty}}
+            {\rule{#3}{0.5pt}\\}
+            {\rule{#3}{0.5pt}\vspace{#1}\\}
+        }
+}
+
+\begin{document}
+
+\begin{center}
+{\Large Central Massachusetts Amateur Radio Association}\\
+\emph{Supplemental Note Sheet, Not official submission.}
+\end{center}
+
+\subsection*{Context}
+\notelines[12pt]{1}{\textwidth}
+
+\subsection*{Notes}
+\notelines[12pt]{19}{\textwidth}
+
+
+\end{document}

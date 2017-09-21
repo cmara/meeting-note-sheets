@@ -12,6 +12,7 @@ If you're not interested in the source of the LaTeX files, you can just download
 - [Board Meeting Note Sheet](https://share.cranstonide.com/w1ide/cmara/board-meeting-note-sheet.pdf)
 - [Business Meeting Note Sheet](https://share.cranstonide.com/w1ide/cmara/business-meeting-note-sheet.pdf)
 - [Meeting Format Reminder Sheet](https://share.cranstonide.com/w1ide/cmara/meeting-format-reminder-sheet.pdf)
+- [Supplemental Sheet](https://share.cranstonide.com/w1ide/cmara/supplemental-note-sheet.pdf)
 
 The files at that location are kept in sync via a [Travis CI build](https://travis-ci.org/mide/cmara-note-sheets).
 
