@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/cmara/meeting-note-sheets.svg?branch=master)](https://travis-ci.org/cmara/meeting-note-sheets) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/cmara/meeting-note-sheets/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/cmara/meeting-note-sheets.svg)](https://github.com/cmara/meeting-note-sheets/issues)
 
-These [LaTeX](https://en.wikipedia.org/wiki/LaTeX) documents are designed to aid in the taking of notes during meetings of the [Central Massachusetts Amateur Radio Association](http://cmara.org/). See [the Disclaimer below](#disclaimer) for more information.
+These [LaTeX](https://en.wikipedia.org/wiki/LaTeX) documents are designed to aid in the taking of notes during meetings of the [Central Massachusetts Amateur Radio Association](http://cmara.org/).
 
 ## Download PDF
 
@@ -25,7 +25,3 @@ make
 ```
 
 Of course, if you're comfortable with LaTeX, you know what to do.
-
-## Disclaimer
-
-These templates were created to aid in note taking during meetings, but do not in any way imply association with the [Central Massachusetts Amateur Radio Association](http://cmara.org/). The content, views, and opinions expressed in these documents are those of the authors and do not necessarily reflect the views or opinions of the [Central Massachusetts Amateur Radio Association](http://cmara.org/). You may freely use these documents under the [MIT License](LICENSE).
