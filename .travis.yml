@@ -1,8 +1,12 @@
-sudo: required
-dist: trusty
-
-install:
-  - sudo bash scripts/install.sh
+addons:
+  apt:
+    packages:
+      - pgf
+      - poppler-utils
+      - texlive-fonts-extra
+      - texlive-fonts-recommended
+      - texlive-latex-extra
+      - texlive-latex-recommended
 
 script:
   - make all
